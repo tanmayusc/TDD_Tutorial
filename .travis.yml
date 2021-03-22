@@ -13,9 +13,11 @@ python:
 install:
   - pip install -r requirements.txt
 addons:
+  firefox: "49.0"
   apt:
     packages:
       firefox-geckodriver
+
 # command to run tests
 script:
   - python manage.py test functional_tests
